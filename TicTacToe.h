@@ -2,12 +2,14 @@
 #define TICTACTOE_H
 
 #include <string>
-
+#include <tuple>
+#include <vector>
 class TicTacToe {
 private:
     char board[3][3];
     char currentPlayer;
     int moveCount;
+    std::vector<std::tuple<int, int, char >> moveHistory;
 
 public:
     TicTacToe();
